@@ -1,14 +1,14 @@
 var logger = function(globalShortcut, active){
 
-  function init(){
+	function init(){
 		this.active = active || true;
 		globalShortcut = globalShortcut || true;
-
+	
 		if ( globalShortcut ) {
-			window.log		= log;
-			window.info		= info;
-			window.warn		= warn;
-			window.dump		= dump;
+			window.log	= log;
+			window.info	= info;
+			window.warn	= warn;
+			window.dump	= dump;
 			window.group	= group;
 			window.groupEnd	= groupEnd;
 		}
@@ -80,10 +80,10 @@ var logger = function(globalShortcut, active){
 
 	return {
 		active: active,
-		log : log,
-		info : info,
-		warn : warn,
-		dump : dump,
+		log : 	log,
+		info : 	info,
+		warn : 	warn,
+		dump : 	dump,
 		group : group,
 		groupEnd : groupEnd
 	};
